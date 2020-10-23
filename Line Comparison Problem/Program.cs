@@ -18,10 +18,20 @@ namespace Line_Comparison_Problem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation Program");
-            Console.WriteLine("Length of the line P1P2 is : " + ComputeLength());
+            Console.WriteLine("Line 1");
+            //Computes length of line 1.
+            double lengthOfLine1 = ComputeLength();
+            Console.WriteLine("Length of line 1: " + lengthOfLine1);
+            Console.WriteLine("Line 2");
+            //Computes length of line 2.
+            double lengthOfLine2 = ComputeLength();
+            Console.WriteLine("Length of line 2: " + lengthOfLine2);
+            //Checks Lengths of line is equal if its equal will return true else false.
+            Console.WriteLine(lengthOfLine1.Equals(lengthOfLine2));
         }
+
         /// <summary>
-        /// Lengthes the of line.
+        /// Computes length the of lines.
         /// </summary>
         /// <returns></returns>
         static double ComputeLength()
