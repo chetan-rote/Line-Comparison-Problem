@@ -26,8 +26,9 @@ namespace Line_Comparison_Problem
             //Computes length of line 2.
             double lengthOfLine2 = ComputeLength();
             Console.WriteLine("Length of line 2: " + lengthOfLine2);
-            //Checks Lengths of line is equal if its equal will return true else false.
-            Console.WriteLine(lengthOfLine1.Equals(lengthOfLine2));
+            //Checks Lengths of line is equal if its equal will return 0 else -1.
+            //Using CompareTo method.
+            Console.WriteLine(lengthOfLine1.CompareTo(lengthOfLine2));
         }
 
         /// <summary>
